@@ -28,7 +28,8 @@ class LoginSerializer(serializers.Serializer):
     def to_representation(self, instance):
         refresh = RefreshToken.for_user(instance)
         return {
-            'email': {
+            'user': {
+                'username': instance.username,
                 'email': instance.email,
             },
             'access': str(refresh.access_token),
