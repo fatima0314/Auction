@@ -9,5 +9,3 @@ admin.site.register(Car)
 admin.site.register(Auction)
 admin.site.register(Brand)
 admin.site.register(Review)
-
-

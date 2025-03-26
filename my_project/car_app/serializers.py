@@ -69,7 +69,6 @@ class CarSimpleSerializer(serializers.ModelSerializer):
         fields = ['id', 'brand_car', 'model_car']
 
 
-
 class CarListSerializer(serializers.ModelSerializer):
     brand_car = BrandSerializer(many=True, read_only=True)
     model_car = ModelSerializer(many=True, read_only=True)

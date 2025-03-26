@@ -21,4 +21,3 @@ class CheckBuyer(BasePermission):
         if request.method in permissions.SAFE_METHODS:
           return True
         return request.user.role == 'buyer'
-
